@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Download, Features, SectionWrapper } from "./components";
+import assets from "./assets";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SectionWrapper
+        title="Your own store of Nifty NFTs. Start Selling and Growing"
+        description="Buy, Store, Collect NFTs, Exchange and earn crypto. Join 25+ million people using ProNef marketplace."
+        showBtn
+        mockupImg={assets.homeHero}
+        banner="banner"
+      />
+      <SectionWrapper
+        title="Smart User Interface Marketplace"
+        description="Experience a butterfly UI of ProNet NFT Marketplace. Smooth constant colors of a fluent UI design."
+        mockupImg={assets.homeCards}
+        reverse
+      />
+    </>
   );
-}
+};
 
 export default App;
