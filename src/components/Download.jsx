@@ -15,8 +15,6 @@ const Download = () => {
             Get the full source code on GitHub
           </p>
         </div>
-        <button></button>
-
         <button className={styles.btnPrimary}>
           <a
             href="https://github.com/sanamhub/nft-app"
